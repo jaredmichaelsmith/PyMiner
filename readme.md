@@ -9,13 +9,11 @@ Python 2.7.x Client for collecting data from the Twitter Stream, processing the 
 #####Setup Instructions:
 - First, clone the repository onto your local machine.
 - Setup a MySQL Database with a specific user for that database; this will be used to store the data.
-- Modify <i>database_creator.sh</i>, <i>database_init.sh</i>, and <i>start.sh</i> to be executable. Then run <i>database_creator.sh</i> like:
+- Modify <i>database_init_sample.sh</i> with your database username and password, and rename to <i>database_init.sh</i>. 
+- Modify <i>database_init.sh</i>, and <i>start.sh</i> to be executable.
 
   
-      <code>chmod +x database_creator.sh database_init.sh start.sh  </code>
-      
-      <code> ./database_creator.sh</code>
-
+      <code>chmod +x database_init.sh start.sh  </code>
 
 - Note: You may need to provide <i>sudo</i> before changing the permission of those files, depending on your system.
 - Edit the sample_config.config file with your database hostname, username, and password specific to the database created earlier. Also, enter your Twitter API access information, which you can get at <a href="https://dev.twitter.com">the Twitter Developers site</a>.
